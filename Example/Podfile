@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'LDZPodTest_Example' do
+  pod 'LDZPodTest', :path => '../'
+
+  target 'LDZPodTest_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
