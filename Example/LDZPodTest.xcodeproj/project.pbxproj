@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C2B9365915235EAF7CEBB05 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		27BEBCFCE9A9BD98ABE71003 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		364AF9B91EF418D7C9488077 /* LDZPodTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LDZPodTest.podspec; path = ../LDZPodTest.podspec; sourceTree = "<group>"; };
+		1C2B9365915235EAF7CEBB05 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		27BEBCFCE9A9BD98ABE71003 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		364AF9B91EF418D7C9488077 /* LDZPodTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LDZPodTest.podspec; path = ../LDZPodTest.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		393CB022A3FD77B74B4790F2 /* Pods-LDZPodTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDZPodTest_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LDZPodTest_Tests/Pods-LDZPodTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4129E6495504505D9F8F7F38 /* Pods-LDZPodTest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDZPodTest_Example.debug.xcconfig"; path = "Target Support Files/Pods-LDZPodTest_Example/Pods-LDZPodTest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		44767EFD2269131945726AB1 /* Pods-LDZPodTest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDZPodTest_Example.release.xcconfig"; path = "Target Support Files/Pods-LDZPodTest_Example/Pods-LDZPodTest_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				393CB022A3FD77B74B4790F2 /* Pods-LDZPodTest_Tests.debug.xcconfig */,
 				E93EF0802B51E3756F232852 /* Pods-LDZPodTest_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -497,10 +497,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LDZPodTest/LDZPodTest-Prefix.pch";
 				INFOPLIST_FILE = "LDZPodTest/LDZPodTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -513,10 +515,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LDZPodTest/LDZPodTest-Prefix.pch";
 				INFOPLIST_FILE = "LDZPodTest/LDZPodTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
